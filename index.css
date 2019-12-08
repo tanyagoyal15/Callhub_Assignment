@@ -7,7 +7,13 @@ body {
     display: flex;
     flex-direction: column;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
 }
 
 .container {
@@ -56,11 +62,6 @@ input {
 	padding: 15px;
 	margin: 8px auto;
 	width: 100%;
-}
-
-h1 {
-	font-weight: bold;
-	margin: 0;
 }
 
 a {
@@ -191,7 +192,7 @@ button:focus {
 
 .overlay p {
 	font-size: 15px;
-	font-weight: 100;
+	font-weight: lighter;
 	line-height: 23px;
 	letter-spacing: 0.5px;
 	margin: 20px 0 30px;
