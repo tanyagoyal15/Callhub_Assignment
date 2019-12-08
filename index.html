@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp/SignIn Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form sign_up_form">
+            <form action="#" onsubmit="return validateSignUpForm()">
+                <h1>Create your account</h1>
+                <div class="links">
+                    <a href="#" class="social_links"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social_links"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social_links"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registrations</span>
+                <input type="text" id="username" name="username" placeholder="Name" autocomplete="off"/>
+                <span id="name_error" class="error"></span>
+
+                <input type="email" id="sign_up_email" name="sign_up_email" placeholder="Email" autocomplete="off"/>
+                <span id="email_error" class="error"></span>
+
+                <input type="password" id="sign_up_password" name="sign_up_password" placeholder="Password" autocomplete="off"/>
+                <span id="password_error" class="error"></span>
+
+                <button type="submit" name="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form sign_in_form">
+            <form action="#" onsubmit="return validateSignInForm()">
+                <h1>Sign in</h1>
+                <div class="links">
+                    <a href="#" class="social_links"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social_links"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social_links"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" id="signin_email" name="signin_email" placeholder="Email" autocomplete="off"/>
+                <span id="emailErr" class="error"></span>
+
+                <input type="password" id="signin_password" name="signin_password" placeholder="Password" autocomplete="off"/>
+                <span id="passwordErr" class="error"></span>
+                
+                <a href="#">Forgot password ?</a>
+                <button type="submit" name="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="hideOverlay" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="hideOverlay" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
