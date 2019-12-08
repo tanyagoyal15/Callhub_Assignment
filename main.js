@@ -59,7 +59,7 @@ function validateSignUpForm() {
     
     if ((name_error || email_error || password_error) == true) {
         return false;
-    }
+    } else alert("You are Signed Up!")
 };
 
 function validateSignInForm() {
@@ -94,5 +94,5 @@ function validateSignInForm() {
 
     if ((emailErr || passwordErr) == true) {
         return false;
-    }
+    } else alert("You are Signed In!")
 };
